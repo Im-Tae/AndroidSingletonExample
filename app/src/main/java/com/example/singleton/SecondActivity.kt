@@ -10,6 +10,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        textView.text = DataSingleton.getInstance()?.message
+        kotlinText.text = KotlinDataSingleton.getInstance()?.message
+        javaText.text = JavaDataSingleton.getInstance()?.message
     }
 }

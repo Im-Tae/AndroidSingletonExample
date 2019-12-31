@@ -11,8 +11,15 @@ class FirstActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
 
-        DataSingleton.getInstance()?.message = "Hello, World!"
-        button.setOnClickListener { startActivity(Intent(this, SecondActivity::class.java)) }
+        kotlinButton.setOnClickListener {
+            KotlinDataSingleton.getInstance()?.message = "Hello, World!"
+            startActivity(Intent(this, SecondActivity::class.java))
+        }
+
+        javaButton.setOnClickListener {
+            JavaDataSingleton.getInstance()?.message = "Hello, World!"
+            startActivity(Intent(this, SecondActivity::class.java))
+        }
 
     }
 }
