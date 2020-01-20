@@ -5,7 +5,7 @@
 앱 동작중에 캐시저장,
 sharedpreferences 대신 사용하고 싶을때
 
-sharedpreferences와 다르게 데이터를 힙에 저장하여 프로세스 죽일시에 데이터는 사라짐.
+sharedpreferences와 다르게 데이터를 힙에 저장하여 프로세스 죽일시에 데이터는 사라집니다.
 
 ```kotlin
 //Kotlin
@@ -41,7 +41,8 @@ public class JavaDataSingleton {
 
         return instance;
     }
-
+    
+	//variable
     String message = null;
 }
 ```
