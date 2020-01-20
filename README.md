@@ -42,7 +42,7 @@ public class JavaDataSingleton {
         return instance;
     }
     
-	//variable
+    //variable
     String message = null;
 }
 ```
